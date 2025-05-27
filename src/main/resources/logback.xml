@@ -1,0 +1,18 @@
+
+        package com.tonnom.evenementmanager.model;
+
+        import java.time.LocalDateTime;
+        import java.util.List;
+
+        public abstract class Evenement {
+        protected String id;
+        protected String nom;
+        protected LocalDateTime date;
+        protected String lieu;
+        protected int capaciteMax;
+        protected List<Participant> participants;
+
+    public abstract void annuler();
+    public abstract void afficherDetails();
+    public abstract void ajouterParticipant(Participant p);
+    }
